@@ -12,8 +12,8 @@ html {
   --lightAccent: #1e8bc3;
   --white: #fff;
   --dark: #222;
-  --light: #666;
-  --lightest: #aaa;
+  --light: #444;
+  --lightest: #eee;
 }
 
 /* navigation */
@@ -64,7 +64,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: var(--white);
 }
 .signup h1 {
   text-align: center;
@@ -83,6 +83,17 @@ html {
   max-width: 100%;
   margin: 0.5rem 0;
 }
+.banner-form input {
+  border: 2px solid var(--lightAccent);
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+}
+.banner-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+  border-width: 3px;
+}
 
 /* icons section */
 .icons,
@@ -91,7 +102,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #eee;
+  background: var(--lightest);
 }
 .icon-box {
   max-width: 75%;
@@ -181,4 +192,9 @@ i:hover {
 a:hover {
   text-decoration: underline;
   text-decoration-color: var(--lightAccent);
+}
+p {
+  font-size: 1.2rem;
+  color: var(--light);
+  text-align: justify;
 }
