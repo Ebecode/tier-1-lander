@@ -151,6 +151,8 @@ html {
   align-items: center;
   margin: 2rem 0;
   padding: 0 3rem;
+}
+.client p {
   text-align: center;
 }
 .client img {
@@ -203,6 +205,7 @@ a {
 
 i:hover {
   color: var(--lightAccent);
+  transform: scale(1.1, 1.1);
 }
 a:hover {
   text-decoration: underline;
@@ -212,4 +215,38 @@ p {
   font-size: 1.2rem;
   color: var(--light);
   text-align: justify;
+}
+h1 {
+  font-size: 2rem;
+}
+
+/* media queries */
+@media only screen and (max-width: 522px) {
+  .main-nav {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .banner-form {
+    min-width: 80%;
+    flex-direction: row;
+  }
+  .banner-form input {
+    flex: 3 0 60%;
+    margin-right: 0.5rem;
+  }
+  .banner-form .btn {
+    flex: 0 1 30%;
+  }
+  .description {
+    padding: 4rem 6rem;
+    min-height: 35vh;
+  }
+  .client {
+    padding: 0 25%;
+  }
+  p {
+    font-size: 1.5rem;
+  }
 }
