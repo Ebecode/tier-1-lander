@@ -250,3 +250,102 @@ h1 {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 769px) {
+  p {
+    font-size: 1.2rem;
+  }
+  .banner-form {
+    min-width: 55%;
+  }
+  .banner-form input {
+    flex: 3 0 65%;
+  }
+  .banner-form .btn {
+    flex: 0 1 25%;
+  }
+  .icons {
+    flex-direction: row;
+    padding: 3.5rem 1rem;
+  }
+  .showcase {
+    display: grid;
+    grid-template-areas:
+      "d1 i1"
+      "i2 d2"
+      "d3 i3";
+  }
+  .d1 {
+    grid-area: d1;
+  }
+  .d2 {
+    grid-area: d2;
+  }
+  .d3 {
+    grid-area: d3;
+  }
+  .i1 {
+    grid-area: i1;
+  }
+  .i2 {
+    grid-area: i2;
+  }
+  .i3 {
+    grid-area: i3;
+  }
+
+  .testimonials {
+    min-width: 100%;
+    padding: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-rows: auto 60vh;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .testimonials h1 {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    align-self: start;
+    justify-self: center;
+  }
+  .client {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .client-1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .client-2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .client-3 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "left1 . right1"
+      "left2 . right1";
+    margin: 1rem;
+    justify-content: space-between;
+  }
+  footer .links {
+    grid-area: left1;
+    align-self: end;
+    margin: 1rem 0 0 -1.5rem;
+  }
+  footer p {
+    grid-area: left2;
+    align-self: start;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+  footer .foot-icons {
+    grid-area: right1;
+    align-self: center;
+  }
+}
